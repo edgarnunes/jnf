@@ -4,12 +4,17 @@ angular.
   module('core.phone').
   factory('Phone', ['$resource',
     function($resource) {
-      return $resource('phones/:phoneId.json', {}, {
+      return $resource('phones/:nomeFile.json', {}, {
         query: {
           method: 'GET',
-          params: {phoneId: 'phones'},
+          params: {nomeFile: 'phones'},
           isArray: true
-        }
+        },
+        query_marcas: {
+          method: 'GET',
+          params: {nomeFile: 'marcas'},
+          isArray: true
+        }        
       });
     }
   ]);

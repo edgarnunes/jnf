@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0, 
+        "marca": "Motorola"
+    }, 
+    {
+        "id": 1, 
+        "marca": "Dell"
+    }, 
+    {
+        "id": 2, 
+        "marca": "Motorola2"
+    }, 
+    {
+        "id": 3, 
+        "marca": "Motorola3"
+    }, 
+    {
+        "id": 4, 
+        "marca": "Motorola4"
+    }
+]
