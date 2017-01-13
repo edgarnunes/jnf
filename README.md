@@ -1,3 +1,24 @@
+# Preparar a working copy, upload changes para o GIT e passagem para produção
+
+## Preparar a working copy
+
+git clone https://github.com/edgarnunes/jnf.git
+
+- Ira criar uma pasta jnf na localização actual
+- Caso tenhas o node instalado podes fazer _npm start_ dentro da pasta jnf para lancar o webserver do node.
+
+http://localhost:8000
+
+## Upload changes para o GIT
+
+ _git add *_ - Convem fazer sempre. Vai adicionar novos files (caso existam) ao versionamento.
+ 
+ _git commit -am "Commit message"_ - Vai registar as alterações na copia local
+ 
+ _git push origin master_ - Envia as alterações para o GITHUB
+ 
+
+
 # AngularJS Phone Catalog Tutorial Application
 
 
