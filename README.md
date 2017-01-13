@@ -1,11 +1,15 @@
 # Preparar a working copy, upload changes para o GIT e passagem para produção
 
 ## Preparar a working copy
-
+### Fazer apenas na 1ª vez
 git clone https://github.com/edgarnunes/jnf.git
 
 - Ira criar uma pasta jnf na localização actual
 - Caso tenhas o node instalado podes fazer _npm start_ dentro da pasta jnf para lancar o webserver do node.
+
+### Actualizar a tua working copy com as alterações que já lá estão
+
+_git pull_
 
 http://localhost:8000
 
