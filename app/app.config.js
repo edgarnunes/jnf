@@ -10,6 +10,9 @@ angular.
         when('/phones', {
           template: '<phone-list></phone-list>'
         }).
+        when('/sobre-nos', {
+          templateUrl: 'views/sobrenos.html'
+        }).
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
