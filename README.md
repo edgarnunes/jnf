@@ -22,6 +22,11 @@ http://localhost:8000
  _git push origin master_ - Envia as alterações para o GITHUB
  
 
+#Adicionada a API em PHP
+
+Para consultar as informações nas tabelas:
+http://localhost/jnf/app/api.php/sub_categorias
+dump da BD com nome bd_jnf.sql
 
 # AngularJS Phone Catalog Tutorial Application
 
