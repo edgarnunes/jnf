@@ -4,7 +4,8 @@ angular.
   module('core.phone').
   factory('Phone', ['$resource',
     function($resource) {
-      return $resource('phones/:nomeFile.json', {}, {
+  //    return $resource('phones/:nomeFile.json', {}, {
+        return $resource('api.php/:nomeFile?transform=1', {}, {
         query: {
           method: 'GET',
           params: {nomeFile: 'phones'},
@@ -13,7 +14,8 @@ angular.
         query_marcas: {
           method: 'GET',
           params: {nomeFile: 'marcas'},
-          isArray: true
+          
+         //isArray: true
         }        
       });
     }

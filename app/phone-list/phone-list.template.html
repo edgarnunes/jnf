@@ -8,6 +8,7 @@
         <input ng-model="$ctrl.query" />
       </p>
 
+
       <p>
         Marcas:
        -> {{ $ctrl.marca_escolhida }} <-
@@ -16,6 +17,15 @@
       <option value="option-2">Option 2</option>
     </select>
       </p>
+      
+
+<table>
+<thead><tr><th>ID</th></tr></thead>
+<tbody>
+<tr ng-repeat="marca in marcas"><td>{{marca.marca}}</td></tr>
+</tbody>
+</tfoot></tfoot>
+</table>
 
       <p>
         Sort by:

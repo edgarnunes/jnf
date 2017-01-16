@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+<head>
+<title>PHP MySQL API Consumed with AngularJS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script src="data.js"></script>
+</head>
+
+<body>
+<div ng-controller="GetUsers">
+
+<table>
+<thead><tr><th>ID</th><th>Name</th><th>Email</th></tr></thead>
+<tbody>
+<tr ng-repeat="user in users"><td>{{user.ID_UTIL}}</td><td>{{ user.LOGIN }}</td><td>{{user.NOME}}</td></tr>
+</tbody>
+</tfoot></tfoot>
+</table>
+
+</div>
+</body>
