@@ -11,6 +11,8 @@ angular.
         this.marcas = Phone.query_marcas();
         console.log("---",Phone.query_marcas());
         this.orderProp = 'age';
+
+
       }
     ]
   });

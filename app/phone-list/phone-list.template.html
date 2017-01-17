@@ -12,20 +12,26 @@
       <p>
         Marcas:
        -> {{ $ctrl.marca_escolhida }} <-
-    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="item.marca as item.marca for item in $ctrl.marcas">
+  <!-- 
+    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="k as v for (k, v) in $ctrl.marcas">
+  -->
+    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="item.marca for item in $ctrl.marcas">
+
       <option value="option-1">Option 1</option>
       <option value="option-2">Option 2</option>
     </select>
       </p>
-      
+
 
 <table>
-<thead><tr><th>ID</th></tr></thead>
+<thead><tr><th>ID</th><th>Marca</th><th>Obs</th></tr></thead>
 <tbody>
-<tr ng-repeat="marca in marcas"><td>{{marca.marca}}</td></tr>
+<tr ng-repeat="modelo in modelos"><td>{{modelo.id_modelo}}</td><td>{{modelo.modelo }}</td><td>{{modelo.obs}}</td></tr>
 </tbody>
 </tfoot></tfoot>
 </table>
+
+
 
       <p>
         Sort by:
@@ -40,7 +46,7 @@
       <!--Body content-->
 
       <ul class="phones">
-        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.marca_escolhida | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.marca_escolhida.marca | filter:$ctrl.query | orderBy:$ctrl.orderProp"
             class="thumbnail phone-list-item">
           <a href="#!/phones/{{phone.id}}" class="thumb">
             <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />

@@ -7,12 +7,12 @@
 </head>
 
 <body>
-<div ng-controller="GetUsers">
+<div ng-controller="GetModelos">
 
 <table>
-<thead><tr><th>ID</th><th>Name</th><th>Email</th></tr></thead>
+<thead><tr><th>ID</th><th>Marca</th><th>Obs</th></tr></thead>
 <tbody>
-<tr ng-repeat="user in users"><td>{{user.ID_UTIL}}</td><td>{{ user.LOGIN }}</td><td>{{user.NOME}}</td></tr>
+<tr ng-repeat="modelo in modelos"><td>{{modelo.id_modelo}}</td><td>{{modelo.modelo }}</td><td>{{modelo.obs}}</td></tr>
 </tbody>
 </tfoot></tfoot>
 </table>
