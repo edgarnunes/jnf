@@ -15,7 +15,7 @@
   <!-- 
     <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="k as v for (k, v) in $ctrl.marcas">
   -->
-    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="item.marca for item in $ctrl.marcas">
+    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="item.marca for item in $ctrl.marcas.marcas">
 
       <option value="option-1">Option 1</option>
       <option value="option-2">Option 2</option>
