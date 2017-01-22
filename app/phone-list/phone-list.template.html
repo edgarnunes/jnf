@@ -15,7 +15,18 @@
   <!-- 
     <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="k as v for (k, v) in $ctrl.marcas">
   -->
-    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-options="item.marca for item in $ctrl.marcas.marcas">
+    <select name="marca" ng-model="$ctrl.marca_escolhida" ng-change = "$ctrl.getMarcas()" ng-options="item.marca for item in $ctrl.marcas.marcas">
+
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+    </select>
+
+      </p>
+
+      <p>
+        Modelos:
+       -> {{ $ctrl.modelo_escolhido }} <-
+    <select name="modelo" ng-disabled="!$ctrl.marca_escolhida" ng-model="$ctrl.modelo_escolhido" ng-options="item.modelo for item in $ctrl.modelos.modelos">
 
       <option value="option-1">Option 1</option>
       <option value="option-2">Option 2</option>
@@ -35,9 +46,14 @@
       <!--Body content-->
 
       <ul class="phones">
-        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.marca_escolhida.marca | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+        <li ng-repeat="equipamentos in $ctrl.equipamentos.equipamentos | 
+        filter:$ctrl.marca_escolhida.marca | 
+        filter:$ctrl.modelo_escolhido.modelo | 
+        filter:$ctrl.query | 
+        orderBy:$ctrl.orderProp"
             class="thumbnail phone-list-item">
-          <a href="#!/phones/{{phone.id}}" class="thumb">
+          <a href="#!/phones/{{equipamentos.id_equipamento}}" class="thumb">
+          {{equipamentos.id_equipamento}} / {{equipamentos.marcas[0].marca}} / {{equipamentos.modelos[0].modelo}}
             <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
           </a>
           <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
