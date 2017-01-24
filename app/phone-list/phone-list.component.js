@@ -20,6 +20,11 @@ angular.
           //return 2222;
         }
 
+
+        this.fotos = Phone.query_fotos();
+
+        console.log(this.foto_escolhida); 
+
         this.equipamentos = Phone.query_equipamentos();
         console.log(this.equipamentos.equipamentos);
       }

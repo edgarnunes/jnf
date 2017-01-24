@@ -2274,8 +2274,8 @@ $api = new PHP_CRUD_API(array(
 	'dbengine'=>'MySQL',
 	'hostname'=>'localhost',
  	'username'=>'root',
- 	'password'=>'domotecnica',
- 	'database'=>'bmr',
+ 	'password'=>'',
+ 	'database'=>'bmr_jnf',
  	'charset'=>'utf8'
  ));
 $api->executeCommand();
