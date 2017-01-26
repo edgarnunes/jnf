@@ -5,7 +5,7 @@ angular.
   factory('Phone', ['$resource',
     function($resource) {
   //   return $resource('phones/:nomeFile.json', {}, {
-      return $resource('api.php/:nomeFile?:opcoes', {}, {
+      return $resource('api.php/:nomeFile/:id_eq?:opcoes', {}, {
   //  return $resource('api.php/:nomeFile', {}, {
 /*        query: {
           method: 'GET',
@@ -21,8 +21,8 @@ angular.
         } ,
         query_modelos: {
           method: 'GET',
-          //params: {nomeFile: 'modelos', opcoes: 'transform=1&filter=modelos.id_marca,eq,4'}
-          params: {nomeFile: 'modelos', opcoes: 'transform=1&include=marcas'}
+          params: {nomeFile: 'modelos', opcoes: 'transform=1&filter=modelos.id_marca,eq,4'}
+       //  params: {nomeFile: 'modelos', opcoes: 'transform=1&include=marcas'}
 
          //comentar para funcionar com o objeto 
       //  isArray: true
