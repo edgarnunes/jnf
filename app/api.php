@@ -321,7 +321,7 @@ class PostgreSQL implements DatabaseInterface {
 	public function getSql($name) {
 		return isset($this->queries[$name])?$this->queries[$name]:false;
 	}
-
+ 
 	public function connect($hostname,$username,$password,$database,$port,$socket,$charset) {
 		$e = function ($v) { return str_replace(array('\'','\\'),array('\\\'','\\\\'),$v); };
 		$conn_string = '';
