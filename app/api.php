@@ -317,7 +317,7 @@ class PostgreSQL implements DatabaseInterface {
 					cub2."table_name" in ?'
 		);
 	}
-
+ 
 	public function getSql($name) {
 		return isset($this->queries[$name])?$this->queries[$name]:false;
 	}
