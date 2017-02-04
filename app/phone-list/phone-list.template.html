@@ -54,7 +54,10 @@
             class="thumbnail phone-list-item">
           <a href="#!/phones/{{equipamentos.id_equipamento}}" class="thumb">
           {{equipamentos.id_equipamento}} / {{equipamentos.marcas[0].marca}} / {{equipamentos.modelos[0].modelo}}
-            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+           
+        <img ng-src="http://web.bmr.pt/administrar/{{equipamentos.fotos[0].foto}}" alt="{{phone.name}}" />
+          
+
           </a>
           <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>

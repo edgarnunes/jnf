@@ -317,11 +317,11 @@ class PostgreSQL implements DatabaseInterface {
 					cub2."table_name" in ?'
 		);
 	}
-
+ 
 	public function getSql($name) {
 		return isset($this->queries[$name])?$this->queries[$name]:false;
 	}
-
+ 
 	public function connect($hostname,$username,$password,$database,$port,$socket,$charset) {
 		$e = function ($v) { return str_replace(array('\'','\\'),array('\\\'','\\\\'),$v); };
 		$conn_string = '';
@@ -2274,8 +2274,8 @@ $api = new PHP_CRUD_API(array(
 	'dbengine'=>'MySQL',
 	'hostname'=>'localhost',
  	'username'=>'root',
- 	'password'=>'domotecnica',
- 	'database'=>'bmr',
+ 	'password'=>'',
+ 	'database'=>'bmr_jnf',
  	'charset'=>'utf8'
  ));
 $api->executeCommand();

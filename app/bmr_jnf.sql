@@ -1,4 +1,26 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: 24-Jan-2017 às 16:11
+-- Versão do servidor: 10.1.19-MariaDB
+-- PHP Version: 5.5.38
 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `bmr_jnf`
+--
+
+-- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `avisos_clientes`
@@ -203,121 +225,30 @@ INSERT INTO `fotos` (`id_foto`, `id_equipamento`, `foto`, `id_local`, `principal
 (11, 3, 'upload/DSC09417.JPG', 1, 0, ''),
 (12, 3, 'upload/DSC09420.JPG', 1, 0, ''),
 (22, 3, 'upload/DSC09415.JPG', 1, 1, ''),
-(36, 5, 'upload/1 (3).JPG', 1, 1, ''),
-(37, 5, 'upload/1 (4).JPG', 1, 0, ''),
 (38, 6, 'upload/DSC09774.JPG', 1, 1, ''),
 (39, 6, 'upload/DSC09770.JPG', 1, 0, ''),
 (40, 6, 'upload/DSC09769.JPG', 1, 0, ''),
 (41, 6, 'upload/DSC09771.JPG', 1, 0, ''),
 (42, 6, 'upload/DSC09773.JPG', 1, 0, ''),
 (43, 6, 'upload/DSC09772.JPG', 1, 0, ''),
-(44, 7, 'upload/20140605_163550.jpg', 1, 1, ''),
-(45, 7, 'upload/20140605_163710.jpg', 1, 0, ''),
-(46, 7, 'upload/P6050852.JPG', 1, 0, ''),
-(47, 7, 'upload/P6050853.JPG', 1, 0, ''),
-(48, 7, 'upload/20140605_163636.jpg', 4, 0, ''),
-(49, 7, 'upload/20140605_163658.jpg', 4, 0, ''),
-(50, 7, 'upload/20140605_163618.jpg', 5, 0, ''),
-(51, 7, 'upload/20140605_163743.jpg', 2, 0, ''),
-(52, 7, 'upload/20140605_163803.jpg', 1, 0, ''),
-(53, 7, 'upload/20140605_163830.jpg', 3, 0, ''),
 (54, 8, 'upload/d6d.JPG', 1, 1, ''),
 (55, 8, 'upload/d6d_1.JPG', 1, 0, ''),
 (56, 8, 'upload/d6d_2.JPG', 1, 0, ''),
 (57, 8, 'upload/d6d_3.JPG', 1, 0, ''),
 (59, 8, 'upload/d6d_6.JPG', 2, 0, ''),
 (61, 8, 'upload/d6d_4.JPG', 5, 0, ''),
-(62, 9, 'upload/DSC09118.JPG', 1, 1, ''),
-(63, 9, 'upload/DSC09119.JPG', 1, 0, ''),
-(64, 9, 'upload/DSC09120.JPG', 1, 0, ''),
-(65, 9, 'upload/DSC09121.JPG', 1, 0, ''),
-(66, 9, 'upload/DSC09122.JPG', 1, 0, ''),
-(67, 9, 'upload/DSC09125.JPG', 5, 0, ''),
-(68, 9, 'upload/DSC09124.JPG', 5, 0, ''),
-(69, 9, 'upload/DSC09130.JPG', 2, 0, ''),
-(70, 9, 'upload/DSC09133.JPG', 2, 0, ''),
-(71, 9, 'upload/DSC09127.JPG', 3, 0, ''),
-(72, 10, 'upload/PICT0061.JPG', 1, 1, ''),
-(73, 10, 'upload/PICT0056.JPG', 1, 0, ''),
-(74, 10, 'upload/PICT0057.JPG', 1, 0, ''),
-(75, 10, 'upload/PICT0060.JPG', 1, 0, ''),
-(76, 10, 'upload/PICT0059.JPG', 1, 0, ''),
-(77, 10, 'upload/PICT0054.JPG', 1, 0, ''),
-(78, 11, 'upload/DSC04830.JPG', 1, 1, ''),
-(79, 11, 'upload/DSC04831.JPG', 1, 0, ''),
-(80, 11, 'upload/DSC04832.JPG', 1, 0, ''),
-(81, 11, 'upload/DSC04833.JPG', 1, 0, ''),
-(82, 11, 'upload/DSC04835.JPG', 1, 0, ''),
-(83, 11, 'upload/DSC04836.JPG', 2, 0, ''),
-(84, 11, 'upload/DSC04839.JPG', 2, 0, ''),
-(85, 11, 'upload/DSC04996.JPG', 3, 0, ''),
 (86, 12, 'upload/DSC00125.JPG', 1, 1, ''),
 (87, 12, 'upload/DSC00111.JPG', 1, 0, ''),
 (88, 12, 'upload/DSC00112.JPG', 1, 0, ''),
 (89, 12, 'upload/DSC00108.JPG', 1, 0, ''),
 (90, 12, 'upload/DSC00128.JPG', 1, 0, ''),
-(91, 13, 'upload/DSC00184.JPG', 1, 1, ''),
-(92, 13, 'upload/DSC00185.JPG', 1, 0, ''),
-(93, 13, 'upload/DSC00187.JPG', 1, 0, ''),
-(94, 13, 'upload/DSC00189.JPG', 1, 0, ''),
-(95, 13, 'upload/DSC00190.JPG', 1, 0, ''),
-(96, 13, 'upload/DSC00191.JPG', 2, 0, ''),
-(97, 13, 'upload/DSC00194.JPG', 5, 0, ''),
-(98, 13, 'upload/DSC00196.JPG', 5, 0, ''),
 (99, 14, 'upload/DSC00150.JPG', 1, 1, ''),
 (100, 14, 'upload/DSC00145.JPG', 1, 0, ''),
 (104, 14, 'upload/DSC00152.JPG', 1, 0, ''),
 (105, 14, 'upload/DSC00146.JPG', 1, 0, ''),
 (106, 14, 'upload/DSC00149.JPG', 1, 0, ''),
-(108, 15, 'upload/050620141286.jpg', 1, 1, ''),
-(109, 15, 'upload/050620141288.jpg', 1, 0, ''),
-(110, 15, 'upload/050620141289.jpg', 1, 0, ''),
-(111, 15, 'upload/050620141290.jpg', 1, 0, ''),
-(112, 15, 'upload/050620141291.jpg', 1, 0, ''),
-(113, 15, 'upload/050620141285.jpg', 1, 0, ''),
-(114, 16, 'upload/050620141307.jpg', 1, 1, ''),
-(115, 16, 'upload/050620141306.jpg', 1, 0, ''),
-(116, 16, 'upload/050620141309.jpg', 1, 0, ''),
-(117, 16, 'upload/050620141308.jpg', 1, 0, ''),
-(118, 16, 'upload/050620141310.jpg', 1, 0, ''),
-(119, 17, 'upload/050620141299.jpg', 1, 1, ''),
-(120, 17, 'upload/050620141300.jpg', 1, 0, ''),
-(121, 17, 'upload/050620141303.jpg', 1, 0, ''),
-(123, 18, 'upload/050620141292.jpg', 1, 1, ''),
-(124, 18, 'upload/050620141294.jpg', 1, 0, ''),
-(125, 18, 'upload/050620141295.jpg', 1, 0, ''),
-(126, 18, 'upload/050620141296.jpg', 1, 0, ''),
-(127, 18, 'upload/050620141297.jpg', 1, 0, ''),
-(128, 19, 'upload/050620141314.jpg', 1, 1, ''),
-(129, 19, 'upload/050620141313.jpg', 1, 0, ''),
-(130, 19, 'upload/050620141317.jpg', 1, 0, ''),
-(132, 19, 'upload/050620141319.jpg', 1, 0, ''),
-(133, 19, 'upload/050620141318.jpg', 1, 0, ''),
-(134, 19, 'upload/050620141320.jpg', 1, 0, ''),
-(135, 19, 'upload/050620141321.jpg', 1, 0, ''),
-(136, 19, 'upload/050620141326.jpg', 1, 0, ''),
 (137, 20, 'upload/20140704_141559.jpg', 1, 1, ''),
 (138, 20, 'upload/20140630_134830.jpg', 1, 0, ''),
-(139, 21, 'upload/050620141345.jpg', 1, 1, ''),
-(140, 21, 'upload/050620141346.jpg', 1, 0, ''),
-(141, 21, 'upload/050620141347.jpg', 1, 0, ''),
-(142, 21, 'upload/050620141348.jpg', 1, 0, ''),
-(143, 21, 'upload/050620141349.jpg', 1, 0, ''),
-(144, 21, 'upload/050620141350.jpg', 1, 0, ''),
-(145, 21, 'upload/050620141352.jpg', 1, 0, ''),
-(146, 21, 'upload/050620141353.jpg', 1, 0, ''),
-(147, 21, 'upload/050620141355.jpg', 1, 0, ''),
-(148, 4, 'upload/CIMG9913.JPG', 1, 1, ''),
-(149, 4, 'upload/CIMG9909.JPG', 1, 0, ''),
-(150, 4, 'upload/CIMG9908.JPG', 1, 0, ''),
-(151, 4, 'upload/CIMG9914.JPG', 1, 0, ''),
-(152, 4, 'upload/CIMG9919.JPG', 1, 0, ''),
-(153, 4, 'upload/CIMG9911.JPG', 4, 0, ''),
-(154, 4, 'upload/CIMG9915.JPG', 4, 0, ''),
-(155, 4, 'upload/CIMG9918.JPG', 1, 0, ''),
-(156, 4, 'upload/CIMG9917.JPG', 1, 0, ''),
-(157, 4, 'upload/CIMG9922.JPG', 1, 0, ''),
-(158, 4, 'upload/CIMG9916.JPG', 1, 0, ''),
 (166, 22, 'upload/IMG_6057.JPG', 1, 1, ''),
 (167, 22, 'upload/IMG_6051.JPG', 1, 0, ''),
 (168, 22, 'upload/IMG_6052.JPG', 1, 0, ''),
@@ -327,9 +258,6 @@ INSERT INTO `fotos` (`id_foto`, `id_equipamento`, `foto`, `id_local`, `principal
 (173, 22, 'upload/IMG_6169.JPG', 2, 0, ''),
 (174, 22, 'upload/IMG_6067.JPG', 2, 0, ''),
 (175, 22, 'upload/IMG_6168a.JPG', 2, 0, ''),
-(176, 23, 'upload/IMG_9496.JPG', 1, 1, ''),
-(177, 23, 'upload/IMG_9491.JPG', 1, 0, ''),
-(178, 23, 'upload/IMG_9513.JPG', 1, 0, ''),
 (179, 24, 'upload/DSC00701.JPG', 1, 1, ''),
 (180, 24, 'upload/DSC00698.JPG', 1, 0, ''),
 (181, 24, 'upload/DSC00699.JPG', 1, 0, ''),
@@ -342,45 +270,10 @@ INSERT INTO `fotos` (`id_foto`, `id_equipamento`, `foto`, `id_local`, `principal
 (188, 24, 'upload/DSC00707.JPG', 1, 0, ''),
 (189, 24, 'upload/DSC00711.JPG', 1, 0, ''),
 (190, 24, 'upload/DSC00709.JPG', 1, 0, ''),
-(191, 25, 'upload/DSC09462.JPG', 1, 1, ''),
-(192, 25, 'upload/DSC09459.JPG', 1, 0, ''),
-(193, 25, 'upload/DSC09457.JPG', 1, 0, ''),
-(194, 25, 'upload/DSC09468.JPG', 1, 0, ''),
-(195, 25, 'upload/DSC09482.JPG', 1, 0, ''),
-(196, 25, 'upload/DSC09460.JPG', 1, 0, ''),
-(197, 25, 'upload/DSC09487.JPG', 1, 0, ''),
-(198, 25, 'upload/DSC09461.JPG', 1, 0, ''),
-(199, 25, 'upload/DSC09464.JPG', 5, 0, ''),
-(200, 25, 'upload/DSC09469.JPG', 1, 0, ''),
-(201, 25, 'upload/DSC09481.JPG', 2, 0, ''),
-(202, 25, 'upload/DSC09465.JPG', 1, 0, ''),
-(203, 25, 'upload/DSC09474.JPG', 1, 0, ''),
-(204, 25, 'upload/DSC09483.JPG', 3, 0, ''),
-(205, 26, 'upload/DSC09372.JPG', 1, 1, ''),
-(206, 26, 'upload/DSC09371.JPG', 1, 0, ''),
-(207, 26, 'upload/DSC09373.JPG', 1, 0, ''),
-(208, 26, 'upload/DSC09382.JPG', 1, 0, ''),
-(209, 26, 'upload/DSC09410.JPG', 2, 0, ''),
-(210, 26, 'upload/DSC09374.JPG', 4, 0, ''),
-(211, 26, 'upload/DSC09385.JPG', 6, 0, ''),
-(212, 26, 'upload/DSC09400.JPG', 3, 0, ''),
 (213, 27, 'upload/DSC00690.JPG', 1, 1, ''),
 (214, 27, 'upload/DSC00691.JPG', 1, 0, ''),
 (215, 27, 'upload/DSC00694.JPG', 1, 0, ''),
 (216, 27, 'upload/DSC00696.JPG', 1, 0, ''),
-(217, 28, 'upload/DSC04979.JPG', 1, 1, ''),
-(218, 28, 'upload/DSC04977.JPG', 1, 0, ''),
-(219, 28, 'upload/DSC04978.JPG', 1, 0, ''),
-(220, 28, 'upload/DSC04981.JPG', 1, 0, ''),
-(221, 28, 'upload/DSC04982.JPG', 1, 0, ''),
-(222, 28, 'upload/DSC04984.JPG', 1, 0, ''),
-(223, 28, 'upload/DSC05325.JPG', 2, 0, ''),
-(224, 28, 'upload/DSC05327.JPG', 3, 0, ''),
-(225, 28, 'upload/DSC05332.JPG', 4, 0, ''),
-(226, 28, 'upload/DSC05334.JPG', 4, 0, ''),
-(227, 28, 'upload/DSC05335.JPG', 5, 0, ''),
-(228, 28, 'upload/DSC05336.JPG', 1, 0, ''),
-(229, 28, 'upload/DSC08945.JPG', 8, 0, ''),
 (238, 29, 'upload/foto2.JPG', 1, 0, ''),
 (239, 29, 'upload/foto4.JPG', 1, 0, ''),
 (240, 29, 'upload/foto3.JPG', 1, 0, ''),
@@ -1595,7 +1488,10 @@ ALTER TABLE `deslocacoes_equipamentos`
 -- Indexes for table `equipamentos`
 --
 ALTER TABLE `equipamentos`
-  ADD PRIMARY KEY (`id_equipamento`);
+  ADD PRIMARY KEY (`id_equipamento`,`id_categoria`,`id_sub_categoria`,`id_marca`,`id_modelo`),
+  ADD KEY `id_modelo` (`id_modelo`),
+  ADD KEY `id_marca` (`id_marca`),
+  ADD KEY `id_categoria` (`id_categoria`);
 
 --
 -- Indexes for table `fornecedores`
@@ -1607,7 +1503,8 @@ ALTER TABLE `fornecedores`
 -- Indexes for table `fotos`
 --
 ALTER TABLE `fotos`
-  ADD PRIMARY KEY (`id_foto`);
+  ADD PRIMARY KEY (`id_foto`,`id_equipamento`),
+  ADD KEY `id_equipamento` (`id_equipamento`);
 
 --
 -- Indexes for table `main_logins`
@@ -1649,7 +1546,8 @@ ALTER TABLE `marcas`
 -- Indexes for table `modelos`
 --
 ALTER TABLE `modelos`
-  ADD PRIMARY KEY (`id_modelo`);
+  ADD PRIMARY KEY (`id_modelo`,`id_marca`),
+  ADD KEY `id_marca` (`id_marca`);
 
 --
 -- Indexes for table `notas_clientes`
@@ -1667,7 +1565,8 @@ ALTER TABLE `notas_fornecedores`
 -- Indexes for table `sub_categorias`
 --
 ALTER TABLE `sub_categorias`
-  ADD PRIMARY KEY (`id_sub_categoria`);
+  ADD PRIMARY KEY (`id_sub_categoria`,`id_categoria`),
+  ADD KEY `id_categoria` (`id_categoria`);
 
 --
 -- Indexes for table `utilizadores`
@@ -1777,6 +1676,36 @@ ALTER TABLE `utilizadores`
 --
 ALTER TABLE `visitas`
   MODIFY `id_visita` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Limitadores para a tabela `equipamentos`
+--
+ALTER TABLE `equipamentos`
+  ADD CONSTRAINT `equipamentos_ibfk_1` FOREIGN KEY (`id_modelo`) REFERENCES `modelos` (`id_modelo`),
+  ADD CONSTRAINT `equipamentos_ibfk_2` FOREIGN KEY (`id_marca`) REFERENCES `marcas` (`id_marca`),
+  ADD CONSTRAINT `equipamentos_ibfk_3` FOREIGN KEY (`id_categoria`) REFERENCES `sub_categorias` (`id_categoria`);
+
+--
+-- Limitadores para a tabela `fotos`
+--
+ALTER TABLE `fotos`
+  ADD CONSTRAINT `fotos_ibfk_1` FOREIGN KEY (`id_equipamento`) REFERENCES `equipamentos` (`id_equipamento`);
+
+--
+-- Limitadores para a tabela `modelos`
+--
+ALTER TABLE `modelos`
+  ADD CONSTRAINT `modelos_ibfk_1` FOREIGN KEY (`id_marca`) REFERENCES `marcas` (`id_marca`);
+
+--
+-- Limitadores para a tabela `sub_categorias`
+--
+ALTER TABLE `sub_categorias`
+  ADD CONSTRAINT `sub_categorias_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
