@@ -3,10 +3,10 @@
 // Register `phoneList` component, along with its associated controller and template
 angular.
   module('phoneList').
-  component('phoneList',{
+  component('phoneList', {
     templateUrl: 'phone-list/phone-list.template.html',
-    controller: ['Phone','$scope',
-      function PhoneListController(Phone, $scope) {
+    controller: ['Phone',
+      function PhoneListController(Phone) {
         //this.phones = Phone.query();
         this.marcas = Phone.query_marcas();
         
