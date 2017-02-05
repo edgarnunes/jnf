@@ -2,7 +2,10 @@
 
 ## Preparar a working copy
 ### Fazer apenas na 1ª vez
-git clone https://github.com/edgarnunes/jnf.git
+~~git clone https://github.com/edgarnunes/jnf.git~~
+git clone ssh://root@bmr.pt/vasr/repo/jnf.git
+
+git remote add jnf_dev ssh://root@bmr.pt/var/repo/jnf.git (Acho que é necessario. Não tenho a certeza)
 
 - Ira criar uma pasta jnf na localização actual
 - Caso tenhas o node instalado podes fazer _npm start_ dentro da pasta jnf para lancar o webserver do node.
@@ -13,14 +16,15 @@ _git pull_
 
 http://localhost:8000
 
-## Upload changes para o GIT
+## Upload changes para o SERVER
 
+(Pode ser feito com o tortoisegit.org)
  _git add *_ - Convem fazer sempre. Vai adicionar novos files (caso existam) ao versionamento.
+  _git commit -am "Commit message"_ - Vai registar as alterações na copia local
+  _git push jnf_dev master_ - Envia as alterações para o nosso server
  
- _git commit -am "Commit message"_ - Vai registar as alterações na copia local
- 
- _git push origin master_ - Envia as alterações para o GITHUB
- 
+ No server o repositorio está em /var/repo/jnf.git
+ Está um post-receive hook para copiar para a pasta dev
 
 #Adicionada a API em PHP
 
