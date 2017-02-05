@@ -17,7 +17,7 @@ _git pull_
 http://localhost:8000
 
 ## Upload changes para o SERVER
-
+https://www.sitepoint.com/deploying-from-github-to-a-server/
 (Pode ser feito com o tortoisegit.org)
  _git add *_ - Convem fazer sempre. Vai adicionar novos files (caso existam) ao versionamento.
   _git commit -am "Commit message"_ - Vai registar as alterações na copia local
